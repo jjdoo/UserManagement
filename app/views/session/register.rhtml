@@ -1,0 +1,34 @@
+
+  <% form_tag do %>
+    <fieldset>
+      <legend>Please Register</legend>
+
+      <div>
+        <label for="name">Name:</label>
+        <%= text_field_tag :name, params[:name] %>
+      </div>
+      <div>
+        <label for="name">Email:</label>
+        <%= text_field_tag :email, params[:email] %>
+      </div>
+      <div>
+        <label for="password">Password:</label>
+        <%= password_field_tag :password, params[:password] %>
+      </div>
+            <div>
+        <label for="password">Password:</label>
+        <%= password_field_tag :password, params[:password_confirmation] %>
+      </div>
+
+      <div>
+        <%= submit_tag "Register" %>
+      </div>
+    </fieldset>
+  <% end %>
+
+<div>
+  <%=link_to "Register", :action =>"register"%>
+</div>
+
+
+

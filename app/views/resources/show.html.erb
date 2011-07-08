@@ -1,0 +1,18 @@
+<p>
+  <b>Username:</b>
+  <%=h @resource.username %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%=h @resource.user_id %>
+</p>
+
+<p>
+  <b>Resouce:</b>
+  <%=h @resource.resouce_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_resource_path(@resource) %> |
+<%= link_to 'Back', resources_path %>
